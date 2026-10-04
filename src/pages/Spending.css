@@ -1,0 +1,15 @@
+.sp-card{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:1.4rem;box-shadow:var(--shadow);margin-bottom:1rem}
+.sp-form{border-top:6px solid var(--gold)}.sp-form h3{display:flex;align-items:center;gap:.5rem;margin-bottom:1rem}
+.sp-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.9rem;align-items:end}
+.sp-card label{display:grid;gap:.35rem;font-size:.8rem;font-weight:700;color:var(--mut)}
+.sp-card input,.sp-card select{font:inherit;color:var(--ink);background:var(--card2);border:1.5px solid var(--line);border-radius:12px;padding:.7rem .9rem;width:100%;outline:0}
+.sp-card input:focus,.sp-card select:focus{border-color:var(--note);box-shadow:0 0 0 4px var(--soft)}
+.sp-save{padding:.8rem;border-radius:12px;border:2px solid var(--gold2);background:var(--gold);color:#3d2b00;font-weight:800;cursor:pointer;box-shadow:0 3px 0 var(--gold2)}
+.sp-save:active{transform:translateY(2px);box-shadow:none}
+.sp-search{position:relative;margin:1rem 0}.sp-search svg{position:absolute;left:.85rem;top:50%;transform:translateY(-50%);color:var(--mut)}.sp-search input{padding-left:2.5rem}
+.sp-list{list-style:none;margin:0;padding:0;border-top:6px double var(--note)}
+.sp-list li{display:flex;align-items:center;gap:.9rem;padding:.85rem 0;border-bottom:1.5px dashed var(--line)}
+.sp-list li>div{flex:1;min-width:0}.sp-list small{display:block;color:var(--mut)}
+.sp-list li>span{font:700 1rem ui-monospace,monospace;color:var(--coral)}
+.sp-rep{margin-left:.4rem;vertical-align:-2px;color:var(--note)}
+.sp-empty{padding:2rem;text-align:center;color:var(--mut)}

@@ -1,0 +1,23 @@
+.ov-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1rem}
+.ov-stat{display:flex;gap:1rem;align-items:center;padding:1.25rem;border-radius:20px;background:var(--card);border:1.5px solid var(--line);box-shadow:var(--shadow)}
+.ov-stat small{display:block;color:var(--mut);font-weight:600}.ov-stat b{display:block;font:800 1.9rem/1.1 var(--display);letter-spacing:-.04em}
+.ov-stat em{font-style:normal;font-size:.78rem;font-weight:700;color:var(--note)}
+.ov-si{width:52px;height:52px;flex:none;display:grid;place-items:center;border-radius:16px;background:var(--note);color:#fff;box-shadow:0 3px 0 var(--note2)}
+.ov-si.warn{background:var(--c-food);box-shadow:0 3px 0 #a85d12}.ov-si.gold{background:var(--gold);color:#3d2b00;box-shadow:0 3px 0 var(--gold2)}
+.ov-stat.bal{background:linear-gradient(135deg,#1f7a4d,#0d4a2f);color:#eafaf0;border-color:transparent}.ov-stat.bal small,.ov-stat.bal em{color:#b7e8c9}
+.ov-row{display:grid;grid-template-columns:1.6fr 1fr;gap:1rem;margin-top:1rem}.ov-row.two{grid-template-columns:1fr 1fr}
+.ov-card{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:1.4rem;box-shadow:var(--shadow);min-width:0}
+.ov-card svg{width:100%;height:auto;display:block}
+.ov-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.ov-pill{padding:.2rem .75rem;border-radius:99px;background:var(--soft);color:var(--note);font-size:.78rem;font-weight:700}
+.ov-cat{display:flex;gap:.8rem;align-items:center;margin-top:.9rem}.ov-cat>div{flex:1}
+.ov-cl{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.3rem}
+.ov-receipt{border-top:6px double var(--note)}
+.ov-tx{display:flex;align-items:center;gap:.8rem;padding:.8rem 0;border-bottom:1.5px dashed var(--line)}.ov-tx:last-child{border:0}
+.ov-tx>div{flex:1}.ov-tx small{display:block;color:var(--mut)}.ov-tx>b{font-family:ui-monospace,monospace}
+.ov-dir{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:var(--bad);color:var(--coral)}.ov-dir.in{background:var(--soft);color:var(--note)}
+.up{color:var(--note)}.dn{color:var(--coral)}
+.ov-side{display:grid;gap:.8rem;align-content:start}.ov-side h3{display:flex;align-items:center;gap:.4rem}
+.ov-jar{display:flex;gap:1rem;align-items:center;padding:1.1rem;border-radius:20px;color:#3d2b00;background:radial-gradient(circle at 90% 10%,rgba(255,255,255,.5) 0 30px,transparent 31px),var(--gold);box-shadow:0 4px 0 var(--gold2)}
+.ov-jar small{display:block;font-weight:600}.ov-jar b{font:800 1.5rem var(--display)}
+@media (max-width:900px){.ov-row,.ov-row.two{grid-template-columns:1fr}}

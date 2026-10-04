@@ -1,0 +1,8 @@
+.se-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1rem}
+.se-card{display:grid;gap:1rem;align-content:start;background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:1.4rem;box-shadow:var(--shadow)}
+.se-card h3{display:flex;align-items:center;gap:.5rem;color:var(--note)}
+.se-card label{display:grid;gap:.35rem;font-size:.8rem;font-weight:700;color:var(--mut)}
+.se-card input,.se-card select{font:inherit;color:var(--ink);background:var(--card2);border:1.5px solid var(--line);border-radius:12px;padding:.7rem .9rem;width:100%;outline:0}
+.se-card input:focus,.se-card select:focus{border-color:var(--note);box-shadow:0 0 0 4px var(--soft)}
+.se-row{display:flex;align-items:center;gap:.9rem;padding:.5rem 0;border-bottom:1.5px dashed var(--line)}.se-row:last-child{border:0}
+.se-row>svg{color:var(--gold2);flex:none}.se-row>div{flex:1}.se-row small{display:block;color:var(--mut)}

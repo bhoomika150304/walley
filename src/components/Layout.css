@@ -1,0 +1,24 @@
+.ly-app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+.ly-side{position:sticky;top:0;height:100vh;padding:1.5rem 1rem;display:flex;flex-direction:column;gap:1.8rem;color:#e6f6ea;
+background:repeating-radial-gradient(circle at 0 0,transparent 0 10px,rgba(255,255,255,.04) 10px 11px),linear-gradient(180deg,#14633d,#0b3f28)}
+.ly-logo{display:flex;align-items:center;gap:.6rem;font:800 1.4rem var(--display);letter-spacing:-.04em}
+.ly-logo svg{padding:7px;width:36px;height:36px;border-radius:50%;color:#6b4a00;background:radial-gradient(circle at 32% 28%,#fff3b8,#f6c33f 50%,#c9961a)}
+.ly-nav{display:grid;gap:.3rem}
+.ly-nav a{display:flex;align-items:center;gap:.8rem;padding:.7rem .9rem;border-radius:14px;font-weight:600;color:#bfe6cc;transition:background .15s}
+.ly-nav a:hover{background:rgba(255,255,255,.1);color:#fff}
+.ly-nav a.on{background:var(--gold);color:#3d2b00;box-shadow:0 3px 0 var(--gold2)}
+.ly-tip{margin-top:auto;display:flex;gap:.7rem;align-items:flex-start;padding:1rem;border-radius:16px;background:rgba(0,0,0,.2);font-size:.85rem;color:#d3f0dc}
+.ly-tip svg{flex:none;color:var(--gold)}
+.ly-main{padding:1.2rem clamp(1rem,3vw,2.5rem) 3rem;min-width:0}
+.ly-tools{display:flex;justify-content:flex-end;gap:.6rem;align-items:center;margin-bottom:.8rem}
+.ly-ib,.ly-av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center}
+.ly-ib{border:1.5px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink)}
+.ly-ib:hover{border-color:var(--note)}
+.ly-av{background:var(--gold);color:#3d2b00;font-weight:800;box-shadow:0 2px 0 var(--gold2)}
+@media (max-width:900px){
+.ly-app{grid-template-columns:1fr}
+.ly-side{position:fixed;inset:auto 0 0 0;height:auto;z-index:9;padding:.35rem .3rem calc(.35rem + env(safe-area-inset-bottom,0px));background:#0b3f28}
+.ly-logo,.ly-tip{display:none}
+.ly-nav{display:grid;grid-template-columns:repeat(7,1fr);width:100%;gap:0}
+.ly-nav a{flex-direction:column;gap:2px;padding:.4rem 0;font-size:.62rem;justify-content:center;text-align:center;border-radius:10px}
+.ly-main{padding-bottom:6rem}}

@@ -1,0 +1,17 @@
+/* Theme tokens + reset only. Every page and component owns its own CSS file. */
+:root{--paper:#e8f1e4;--card:#fbfdf9;--card2:#f1f7ee;--ink:#12261b;--mut:#587063;--line:#cfdcc9;
+--note:#1f7a4d;--note2:#0d4a2f;--gold:#f6c33f;--gold2:#c9961a;--coral:#e0493f;--soft:#dcefd9;--warn:#fff0c4;--bad:#fbe1de;
+--c-food:#e8872a;--c-travel:#2a86d8;--c-shopping:#8a5fd0;--c-bills:#1f7a4d;
+--shadow:0 2px 0 rgba(13,74,47,.08),0 14px 28px -14px rgba(13,74,47,.3);
+--display:'Bricolage Grotesque',system-ui,sans-serif;--body:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{--paper:#07140e;--card:#0e211a;--card2:#12291f;--ink:#e6f4ea;--mut:#8eaa9b;--line:#1f3a2d;
+--note:#3fd08f;--note2:#0b3a28;--soft:#143a2a;--warn:#3b2f0a;--bad:#3d1816;--c-bills:#3fd08f;--shadow:0 14px 28px -14px rgba(0,0,0,.7)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:15px/1.55 var(--body);-webkit-font-smoothing:antialiased;
+background:repeating-linear-gradient(45deg,transparent 0 18px,rgba(31,122,77,.05) 18px 19px),radial-gradient(circle at 12px 12px,rgba(246,195,63,.14) 0 3px,transparent 4px) 0 0/48px 48px,var(--paper)}
+h1,h2,h3,p{margin:0}h1,h2,h3{font-family:var(--display);letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--c-travel);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
